@@ -1,5 +1,13 @@
-import { IonContent, IonHeader, IonPage, IonList, IonTitle, IonToolbar, IonItem, IonAvatar, IonLabel, IonItemSliding, IonItemOptions, IonItemOption } from '@ionic/react';
-import React from 'react';
+import { 
+  IonContent, IonHeader, IonPage, IonList, 
+  IonTitle, IonToolbar, IonItem, IonAvatar, 
+  IonLabel, IonItemSliding, IonItemOptions, IonItemOption, 
+  IonButton, IonIcon, IonInput 
+} from '@ionic/react';
+
+import { star } from 'ionicons/icons';
+
+import React, { useState, useEffect } from 'react';
 import './Home.css';
 
 const arr = [
@@ -22,6 +30,14 @@ const arr = [
 ]
 
 const Home: React.FC = () => {
+
+  const [input, setInput] = useState<string>('')
+  
+  // Similar to componentDidMount and componentDidUpdate:
+  useEffect(() => {
+    console.log('input', input)
+  }, [input])
+
   return (
     <IonPage>
       <IonHeader>
@@ -30,6 +46,17 @@ const Home: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent className="ion-padding">
+        <IonButton expand="full" color="primary">
+          <IonIcon slot="start" icon={star}></IonIcon>
+          Heloooo
+        </IonButton>
+
+        <IonInput
+          value={input}
+          onIonChange={(e: any) => setInput(e.target.value)}>
+        </IonInput>
+
+
         <IonList>
           {arr.map(elem => (
             <IonItemSliding key={elem.name}>

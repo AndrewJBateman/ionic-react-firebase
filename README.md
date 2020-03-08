@@ -17,7 +17,7 @@ App using Ionic with React to store data in a Firebase backend.
 
 ## General info
 
-* 
+* React [Effect Hook](https://reactjs.org/docs/hooks-effect.html) used to manually change the DOM, equivalent of lifecycle methods componentDidMount, componentDidUpdate & componentWillUnmount combined.
 
 ## Screenshots
 
@@ -26,6 +26,7 @@ App using Ionic with React to store data in a Firebase backend.
 ## Technologies
 
 * [Ionic/React v5.0.0](https://www.npmjs.com/package/@ionic/react)
+* [React](https://reactjs.org/) JavaScript library
 
 ## Setup
 
@@ -46,7 +47,7 @@ App using Ionic with React to store data in a Firebase backend.
 
 ## Status & To-Do List
 
-* Status: In progress - video 9 completed
+* Status: In progress - video 11 completed
 * To-Do: Complete series of videos
 
 ## Inspiration
