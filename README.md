@@ -26,7 +26,8 @@ App using Ionic with React to store data in a Firebase backend.
 ## Technologies
 
 * [Ionic/React v5.0.0](https://www.npmjs.com/package/@ionic/react)
-* [React](https://reactjs.org/) JavaScript library
+* [React v16.12.0](https://reactjs.org/) JavaScript library
+* [React Dev Tools Chrome extension](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi/related)
 
 ## Setup
 
@@ -47,7 +48,7 @@ App using Ionic with React to store data in a Firebase backend.
 
 ## Status & To-Do List
 
-* Status: In progress - video 11 completed
+* Status: In progress - video 14 completed
 * To-Do: Complete series of videos
 
 ## Inspiration
