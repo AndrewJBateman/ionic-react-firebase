@@ -7,9 +7,14 @@ import {
   IonButton
 } from '@ionic/react';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Home: React.FC = () => {
+  const [input] = useState<string>('')
+
+  useEffect(() => {
+    console.log(input)
+  }, [input])
 
   return (
     <IonPage>

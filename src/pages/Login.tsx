@@ -5,19 +5,29 @@ import {
   IonTitle,
   IonToolbar,
   IonInput,
-  IonButton
+  IonButton,
+  IonLoading
 } from '@ionic/react';
 
 import React, { useState } from 'react';
-import './Home.css';
 import { Link } from 'react-router-dom';
+import { loginUser } from '../firebaseConfig';
+import { toast } from '../toast';
 
 const Login: React.FC = () => {
+
+  const [busy, setBusy] = useState<boolean>(false)
+
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
 
-  function loginUser() {
-    console.log('Username', username, 'Password', password)
+  async function login() {
+    setBusy(true)
+    const res = await loginUser(username, password)
+    if (res) {
+      toast('You have logged in')
+    }
+    setBusy(false)
   }
   
   return (
@@ -27,14 +37,16 @@ const Login: React.FC = () => {
           <IonTitle>Login</IonTitle>
         </IonToolbar>
       </IonHeader>
+      <IonLoading message="Please wait.." duration={0} isOpen={busy}/>
       <IonContent className="ion-padding">
         <IonInput
           placeholder="Username?"
           onIonChange={(e: any) => setUsername(e.target.value)}/>
         <IonInput
+          type="password"
           placeholder="Password?"
           onIonChange={(e: any) => setPassword(e.target.value)}/>
-        <IonButton onClick={loginUser}>Login</IonButton>
+        <IonButton onClick={login}>Login</IonButton>
 
         <p>
           New here? <Link to="/register">Register</Link>
