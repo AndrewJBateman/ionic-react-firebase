@@ -5,7 +5,8 @@ import {
   IonTitle,
   IonToolbar,
   IonInput,
-  IonButton
+  IonButton,
+  IonLoading
 } from '@ionic/react';
 
 import React, { useState } from 'react';
@@ -17,13 +18,15 @@ const Register: React.FC = () => {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
   const [cpassword, setCPassword] = useState('')
+  const [busy, setBusy] = useState<boolean>(false)
 
   async function register() {
     // validation
-    if(password !== cpassword) {
+    setBusy(true)
+    if (password !== cpassword) {
       return toast('Passwords do not match')
     }
-    if(username.trim() === '' || password.trim() === '') {
+    if (username.trim() === '' || password.trim() === '') {
       return toast('Username and password are required')
     }
 
@@ -31,6 +34,7 @@ const Register: React.FC = () => {
     if (res) {
       toast('You have registered successfully')
     }
+    setBusy(false)
   }
 
   return (
@@ -41,6 +45,7 @@ const Register: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent className="ion-padding">
+      <IonLoading message="Registering..." duration={0} isOpen={busy}/>
         <IonInput
           placeholder="Username?"
           onIonChange={(e: any) => setUsername(e.target.value)}/>

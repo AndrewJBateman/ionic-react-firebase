@@ -28,6 +28,7 @@ App using Ionic with React to store data in a Firebase backend.
 
 * [Ionic/React v5.0.0](https://www.npmjs.com/package/@ionic/react)
 * [React v16.12.0](https://reactjs.org/) JavaScript library
+* [React Redux v7.2](https://react-redux.js.org/)
 * [React Dev Tools Chrome extension](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi/related)
 
 ## Setup
@@ -45,7 +46,10 @@ App using Ionic with React to store data in a Firebase backend.
 
 ## Features
 
-* 
+* [React Effects](https://reactjs.org/docs/hooks-effect.html) - `componentDidMount`, `componentDidUpdate` & `componentWillUnmount` combined, and embrace [JavaScript closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures#:~:text=A%20closure%20is%20the%20combination,scope%20from%20an%20inner%20function.)
+* Redux reducers used to modify state
+* [DOM Window object browser session history](https://developer.mozilla.org/en-US/docs/Web/API/History_API) used to navigate
+* [React Redux useDispath method](https://react-redux.js.org/api/hooks#usedispatch) used to dispatch actions
 
 ## Status & To-Do List
 

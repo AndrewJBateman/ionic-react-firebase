@@ -9,22 +9,26 @@ import {
   IonLoading
 } from '@ionic/react';
 
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useHistory } from 'react-router-dom';
 import { loginUser } from '../firebaseConfig';
 import { toast } from '../toast';
+import { setUserState } from '../redux/actions';
+import { useDispatch } from 'react-redux';
 
 const Login: React.FC = () => {
-
   const [busy, setBusy] = useState<boolean>(false)
-
+  const history = useHistory()
+  const dispatch = useDispatch()
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
 
   async function login() {
     setBusy(true)
-    const res = await loginUser(username, password)
+    const res: any = await loginUser(username, password)
     if (res) {
+      dispatch(setUserState(res.user.email))
+      history.replace('/dashboard')
       toast('You have logged in')
     }
     setBusy(false)
@@ -37,7 +41,7 @@ const Login: React.FC = () => {
           <IonTitle>Login</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonLoading message="Please wait.." duration={0} isOpen={busy}/>
+      <IonLoading message="Please wait.." duration={0} isOpen={busy} />
       <IonContent className="ion-padding">
         <IonInput
           placeholder="Username?"
