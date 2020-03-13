@@ -5,3 +5,15 @@
   background: #eee;
   border-radius: 6px;
 }
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+}
+
+.done {
+  font-weight: bold
+}

@@ -53,7 +53,7 @@ App using Ionic with React to store data in a Firebase backend.
 
 ## Status & To-Do List
 
-* Status: In progress - video 19 of 25 completed
+* Status: Tutorial completed - all 26 videos completed
 * To-Do: Complete series of videos
 
 ## Inspiration

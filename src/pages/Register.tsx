@@ -8,7 +8,6 @@ import {
   IonButton,
   IonLoading
 } from '@ionic/react';
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { toast } from '../toast';
