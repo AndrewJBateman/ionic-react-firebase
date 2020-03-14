@@ -61,7 +61,7 @@ const Dashboard: React.FC = () => {
         wordBlocks[activeWordIndex] = {
           ...wordBlocks[activeWordIndex],
           done: true,
-          correct: wordBlocks[activeWordIndex].word === value
+          correct: wordBlocks[activeWordIndex].word === value.trim()
         }
 
         if (wordBlocks.length > 15) {
@@ -107,10 +107,11 @@ const Dashboard: React.FC = () => {
         <IonInput
           placeholder="Write the word"
           ref={inputRef}
-          onIonChange={(e: any) => setInputValue(e.target.value)}></IonInput>
+          onIonChange={(e: any) => setInputValue(e.target.value)}>
+        </IonInput>
 
         <p>Hello {username}</p>
-        <IonButton onClick={logoutUser}>Logout</IonButton>
+        <IonButton onClick={logout}>Logout</IonButton>
       </IonContent>
     </IonPage>
   )

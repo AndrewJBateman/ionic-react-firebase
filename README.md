@@ -1,6 +1,6 @@
 # Angular React Firebase
 
-App using Ionic with React to store data in a Firebase backend.
+* App using Ionic with React to store data in a Firebase backend. All code from tutorial by [codedamn](https://codedamn.com/)
 
 *** Note: to open web links in a new window use: _ctrl+click on link_**
 
@@ -38,10 +38,20 @@ App using Ionic with React to store data in a Firebase backend.
 
 ## Code Examples
 
-* 
+* login function from `login.tsx`
 
 ```typescript
-
+async function login() {
+    setBusy(true)
+    const res: any = await loginUser(username, password)
+    if (res) {
+      console.log('login res', res)
+      dispatch(setUserState(res.user.email))
+      history.replace('/dashboard')
+      toast('You have logged in')
+    }
+    setBusy(false)
+  }
 ```
 
 ## Features
@@ -53,8 +63,8 @@ App using Ionic with React to store data in a Firebase backend.
 
 ## Status & To-Do List
 
-* Status: Tutorial completed - all 26 videos completed
-* To-Do: Complete series of videos
+* Status: Tutorial completed - all 26 videos completed.Register and Login functions work however when routed to /dashboard just shows a blank screen.
+* To-Do: Solve issue of /dashboard page - likely an issue with `Dashboard.tsx` - or maybe not.
 
 ## Inspiration
 
@@ -63,4 +73,4 @@ App using Ionic with React to store data in a Firebase backend.
 
 ## Contact
 
-Repor created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
+Repo created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!

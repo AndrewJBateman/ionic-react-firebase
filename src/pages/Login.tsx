@@ -27,6 +27,7 @@ const Login: React.FC = () => {
     setBusy(true)
     const res: any = await loginUser(username, password)
     if (res) {
+      console.log('login res', res)
       dispatch(setUserState(res.user.email))
       history.replace('/dashboard')
       toast('You have logged in')
@@ -45,11 +46,11 @@ const Login: React.FC = () => {
       <IonContent className="ion-padding">
         <IonInput
           placeholder="Username?"
-          onIonChange={(e: any) => setUsername(e.target.value)}/>
+          onIonChange={(e: any) => setUsername(e.target.value)} />
         <IonInput
           type="password"
           placeholder="Password?"
-          onIonChange={(e: any) => setPassword(e.target.value)}/>
+          onIonChange={(e: any) => setPassword(e.target.value)} />
         <IonButton onClick={login}>Login</IonButton>
 
         <p>

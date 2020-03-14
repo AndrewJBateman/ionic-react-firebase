@@ -52,7 +52,7 @@ const App: React.FC = () => {
     getCurrentUser().then((user: any) => {
       console.log(user)
       if(user) {
-        // logged in. Dispatch action from redux store
+        // logged in. Dispatch action from redux store in actions.ts file
         dispatch(setUserState(user.email))
         console.log(firebase.auth().currentUser?.email)
         window.history.replaceState({}, '', '/dashboard')

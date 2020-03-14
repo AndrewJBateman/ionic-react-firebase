@@ -4,7 +4,7 @@ const defaultState = {
 
 export default function reducer(
   state = defaultState,
-  { type, payload }: { type: string, payload: any }
+  { type, payload }: { type: string; payload: any }
 ): any {
   // work with state
   switch(type) {

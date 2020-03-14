@@ -28,9 +28,7 @@ export async function loginUser(username: string, password: string) {
   const email = `${username}@yahoo.com`
   try {
     const res = await firebase.auth().signInWithEmailAndPassword(email, password)
-
-    console.log('res', res)
-    return true
+    return res
   } catch(error) {
     toast(error.message, 4000)
     return false
@@ -40,7 +38,7 @@ export async function loginUser(username: string, password: string) {
 export async function registerUser(username: string, password: string) {
   const email = `${username}@yahoo.com`
   try {
-    const res = await firebase.auth().signInWithEmailAndPassword(email, password)
+    const res = await firebase.auth().createUserWithEmailAndPassword(email, password)
 
     return res
   } catch (error) {
