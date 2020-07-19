@@ -50,7 +50,6 @@ const App: React.FC = () => {
 
   useEffect(() => {
     getCurrentUser().then((user: any) => {
-      console.log(user)
       if(user) {
         // logged in. Dispatch action from redux store in actions.ts file
         dispatch(setUserState(user.email))

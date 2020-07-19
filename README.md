@@ -67,7 +67,7 @@ async function login() {
 ## :clipboard: Status & To-Do List
 
 * Status: Tutorial completed - all 26 videos completed. Register and Login functions work however when routed to /dashboard just shows a blank screen.
-* To-Do: Solve issue of /dashboard page - likely an issue with `Dashboard.tsx` - or maybe not.
+* To-Do: Solve issue of /dashboard page - likely an issue with 'dispatch' in `Dashboard.tsx`.
 
 ## :clap: Inspiration
 
