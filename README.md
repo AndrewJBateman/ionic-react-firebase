@@ -1,4 +1,4 @@
-# :zap: Angular React Firebase
+# :zap: Ionic React Firebase
 
 * App using Ionic with React to store data in a Firebase backend. All code from tutorial by [codedamn](https://codedamn.com/)
 
@@ -6,7 +6,7 @@
 
 ## :page_facing_up: Table of contents
 
-* [:zap: Angular React Firebase](#zap-angular-react-firebase)
+* [:zap: Ionic React Firebase](#zap-ionic-react-firebase)
   * [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
   * [:books: General info](#books-general-info)
   * [:camera: Screenshots](#camera-screenshots)
