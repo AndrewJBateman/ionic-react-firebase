@@ -26,6 +26,7 @@ type WordType = {
 const Dashboard: React.FC = () => {
   const username = useSelector((state: any) => state.user.username)
   const [busy, setBusy] = useState(false)
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [input, _setInput] = useState('')
 
   const [activeWordIndex, setActiveWordIndex] = useState(0)
@@ -67,7 +68,7 @@ const Dashboard: React.FC = () => {
         if (wordBlocks.length > 15) {
           wordBlocks[removeIndex] = null
           setRemoveIndex(count => ++count)
-        } 
+        }
 
         setActiveWordIndex(count => ++count)
 
@@ -101,7 +102,7 @@ const Dashboard: React.FC = () => {
             return <span className="word done incorrect">{wordBlock.word}</span>
           }
 
-          return <span className="word">{wordBlock.word}</span>
+          return <span className="word" key="">{wordBlock.word}</span>
         })}
 
         <IonInput

@@ -16,6 +16,7 @@
   * [:cool: Features](#cool-features)
   * [:clipboard: Status & To-Do List](#clipboard-status--to-do-list)
   * [:clap: Inspiration](#clap-inspiration)
+  * [:file_folder: License](#file_folder-license)
   * [:envelope: Contact](#envelope-contact)
 
 ## :books: General info
@@ -37,6 +38,7 @@
 ## :floppy_disk: Setup
 
 * Install dependencies using `npm i`
+* Create your own firebase console project and add firebaseConfig to `firebaseConfig.ts`
 * Run `ionic serve` to open the dev server at `http://localhost:8100/`
 
 ## :computer: Code Examples
@@ -74,6 +76,10 @@ async function login() {
 * [CodeDamn Youtube Video Series: Ionic + React + Firebase #1 to #26](https://www.youtube.com/watch?v=WugT638KS3Q)
 * [Ionic api list of people to use in app](https://ionicframework.com/docs/demos/api/list/)
 
+## :file_folder: License
+
+* This project is licensed under the terms of the MIT license.
+
 ## :envelope: Contact
 
-* Repo created by [ABateman](https://www.andrewbateman.org) - you are welcome to [send me a message](https://andrewbateman.org/contact)
+* Repo created by [ABateman](https://github.com/AndrewJBateman), email: gomezbateman@yahoo.com
