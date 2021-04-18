@@ -31,7 +31,7 @@
 ## :signal_strength: Technologies
 
 * [Ionic/React v5](https://www.npmjs.com/package/@ionic/react)
-* [React v16](https://reactjs.org/) JavaScript library
+* [React v17](https://reactjs.org/) JavaScript library
 * [React Redux v7](https://react-redux.js.org/)
 * [React Dev Tools Chrome extension](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi/related)
 
@@ -68,13 +68,14 @@ async function login() {
 
 ## :clipboard: Status & To-Do List
 
-* Status: Tutorial completed - all 26 videos completed. Register and Login functions work however when routed to /dashboard just shows a blank screen.
+* Status: Tutorial completed - all 26 videos completed. Register and Login functions work however when routed to /dashboard just shows a blank screen. Updated april 2021.
 * To-Do: Solve issue of /dashboard page - likely an issue with 'dispatch' in `Dashboard.tsx`.
 
 ## :clap: Inspiration
 
 * [CodeDamn Youtube Video Series: Ionic + React + Firebase #1 to #26](https://www.youtube.com/watch?v=WugT638KS3Q)
 * [Ionic api list of people to use in app](https://ionicframework.com/docs/demos/api/list/)
+* [Eslint doc: disallow variable redeclaration (no-redeclare)](https://eslint.org/docs/rules/no-redeclare#disallow-variable-redeclaration-no-redeclare)
 
 ## :file_folder: License
 
