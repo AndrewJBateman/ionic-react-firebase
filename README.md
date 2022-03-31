@@ -1,8 +1,12 @@
 # :zap: Ionic React Firebase
 
 * App using Ionic with React to store data in a Firebase backend. All code from tutorial by [codedamn](https://codedamn.com/)
+* **Note:** to open web links in a new window use: _ctrl+click on link_
 
-*** Note: to open web links in a new window use: _ctrl+click on link_**
+![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/ionic-react-firebase?style=plastic)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/AndrewJBateman/ionic-react-firebase?style=plastic)
+![GitHub Repo stars](https://img.shields.io/github/stars/AndrewJBateman/ionic-react-firebase?style=plastic)
+![GitHub last commit](https://img.shields.io/github/last-commit/AndrewJBateman/ionic-react-firebase?style=plastic)
 
 ## :page_facing_up: Table of contents
 
@@ -68,7 +72,7 @@ async function login() {
 
 ## :clipboard: Status & To-Do List
 
-* Status: Tutorial completed - all 26 videos completed. Register and Login functions work however when routed to /dashboard just shows a blank screen. Updated april 2021.
+* Status: Tutorial completed - all 26 videos completed. Register and Login functions work however when routed to /dashboard just shows a blank screen. Do not update.
 * To-Do: Solve issue of /dashboard page - likely an issue with 'dispatch' in `Dashboard.tsx`.
 
 ## :clap: Inspiration
@@ -84,3 +88,4 @@ async function login() {
 ## :envelope: Contact
 
 * Repo created by [ABateman](https://github.com/AndrewJBateman), email: gomezbateman@yahoo.com
+
